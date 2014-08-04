@@ -1,5 +1,13 @@
+
+# Built in Libraries
+# none
+
+# Third Party Libraries
 import pandas as pd
 import numpy as np
+
+# Local Libraries
+# none
 
 FILENAME = 'data/train.csv'
 
@@ -17,6 +25,7 @@ def printinfo(df):
     print '---------- PANDAS Defaul Info --------------'
     df.info()
 
+    print '' 
     print '---------- PANDAS Description ----------------'
     df.describe()
 
