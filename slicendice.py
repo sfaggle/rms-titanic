@@ -5,6 +5,7 @@
 # Third Party Libraries
 import pandas as pd
 import numpy as np
+import pylab as P
 
 # Local Libraries
 # none
@@ -29,9 +30,15 @@ def printinfo(df):
     print '---------- PANDAS Description ----------------'
     df.describe()
 
+def agehist(df):
+    """Did you die due to old age? Heart attacks?"""
+    df['Age'].hist()
+    P.show()
 
-if __name__ == "__main__":
+def run():
     df = loaddata(FILENAME)
     printinfo(df)
+    agehist(df)
 
-
+if __name__ == "__main__":
+    run()
